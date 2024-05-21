@@ -1,10 +1,9 @@
 
-import { defineStore } from 'pinia'
 import { EditorView } from '@codemirror/view';
 import axios from 'axios';
-import { TextInfo } from './logManager/importers/_logImpoter';
-import { CharItem, LogItem, packNameId } from './logManager/types';
 import { random } from 'lodash-es';
+import { defineStore } from 'pinia';
+import { CharItem, LogItem, packNameId } from './logManager/types';
 
 export const useStore = defineStore('main', {
   state: () => {
@@ -119,7 +118,7 @@ export const useStore = defineStore('main', {
 
     async tryFetchLog(key: string, password: string) {
       // https://weizaima.com/dice
-      const resp = await axios.get('https://weizaima.com/dice/api/load_data', {
+      const resp = await axios.get('https://logurl.muxin.asia/dice/api/load_data', {
         params: { key, password }
       })
       return resp.data
