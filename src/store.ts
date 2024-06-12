@@ -2,6 +2,7 @@
 import { EditorView } from '@codemirror/view';
 import axios from 'axios';
 import { random } from 'lodash-es';
+import { defineStore } from 'pinia';
 import * as twColors from 'tailwindcss/colors';
 import { CharItem, LogItem, packNameId } from './logManager/types';
 

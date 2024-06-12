@@ -4,7 +4,7 @@
       <n-flex class="py-3 text-2xl" size="large" align="center" justify="center" wrap>
         <n-flex align="center" justify="center">
           <strong>海豹TRPG跑团Log着色器-暮星爆炸版</strong>
-          <n-tag type="success" size="small" :bordered="false">v2.4.1</n-tag>
+          <n-tag type="success" size="small" :bordered="false">v2.5.0</n-tag>
         </n-flex>
         <n-flex align="center" justify="center">
           <n-icon>
@@ -16,9 +16,9 @@
         </n-flex>
       </n-flex>
     </n-layout-header>
-    <n-layout-content>
-      <div style="width: 1000px; margin: 0 auto; max-width: 100%;">
-        <n-text type="info" italic class="block text-center my-1">SealDice骰QQ群 524364253 [群介绍中有其余3群] 此版本联系QQ:1009592348</n-text>
+    <n-layout-content class="bg-slate-100 dark:bg-inherit">
+      <div style="width: 1000px; margin: 0 auto; max-width: 100%; padding-bottom: 3rem">
+        <n-text type="info" italic class="block text-center my-1">SealDice骰QQ群 524364253 [群介绍中有其余3群]</n-text>
         <option-view></option-view>
         <n-spin :show="loading">
           <template #description>
